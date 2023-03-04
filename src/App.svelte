@@ -3,9 +3,10 @@
   import PauseScreen from "./components/PauseScreen.svelte";
   import Gallery from "./components/Gallery.svelte";
   import Megumin from "./components/Megumin.svelte";
-  import { isSafari, printEgg } from "./utils/funcs";
+  import { isSafari, preloadAudio, printEgg } from "./utils/funcs";
   import chiisanaMp3 from "./assets/chiisana_boukensha.mp3";
   import chiisanaOgg from "./assets/chiisana_boukensha.ogg";
+  import { onMount } from "svelte";
 
   let paused = true;
 
@@ -13,7 +14,10 @@
     paused = false;
   };
 
-  printEgg();
+  onMount(() => {
+    printEgg();
+    isSafari() ? preloadAudio(chiisanaMp3) : preloadAudio(chiisanaOgg);
+  });
 </script>
 
 {#if paused}

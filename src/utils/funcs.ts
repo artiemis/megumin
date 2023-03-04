@@ -2,6 +2,10 @@ export const isSafari = () => {
   return /Safari\/\d+/.test(window.navigator.userAgent);
 };
 
+export const preloadAudio = (url: string) => {
+  new Audio().src = url;
+};
+
 export const randomRange = (min: number, max: number) => {
   return (Math.random() * (max - min) + min).toFixed(1);
 };
