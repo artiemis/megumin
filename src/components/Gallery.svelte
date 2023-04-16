@@ -92,6 +92,6 @@
 
   img {
     border-radius: 10px;
-    border: 3px solid var(--megumin-crimson);
+    border: 3px solid #ef4444;
   }
 </style>

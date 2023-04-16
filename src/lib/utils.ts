@@ -22,7 +22,7 @@ export const randomStyle = () => {
 export const printExplosion = () => {
   console.log(
     "%cDarker than black, darker than darkness, combine with my intense crimson. Time to wake up, descend to these borders and appear as an intangible distortion. Dance, dance, dance! May a destructive force flood my torrent of power, a destructive force like no other! Send all creation to its source! Come out of your abyss! Humanity knows no other more powerful offensive technique! It is the ultimate magical attack!",
-    "color: #ef8400; font-size: 16px;"
+    "color: #f97316; font-size: 16px;"
   );
-  console.log("%cEx-PLOSION~!!", "color: #e8006d; font-size: 48px; font-weight: 700;");
+  console.log("%cEx-PLOSION~!!", "color: #ec4899; font-size: 48px; font-weight: 700;");
 };

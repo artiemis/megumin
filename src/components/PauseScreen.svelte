@@ -1,11 +1,18 @@
 <div class="pause" on:click on:keydown>
-  <h1 class="blink">God's Blessing on this<br />Wonderful Site!</h1>
+  <h1>
+    <span class="godsblessing">
+      <span class="pink">God's </span>
+      <span class="orange">Blessing</span>
+    </span>
+    <span class="smol">on<br /> this</span>
+    <br />
+    Wonder<span class="pink">ful </span>
+    Site<span class="orange">!</span>
+  </h1>
   <p>
     この<span class="pink">素</span><span class="orange">晴</span>らしい<span class="pink">サイ</span><span
       class="orange">ト</span
-    >に<span class="pink">祝</span><span class="orange">福</span>を<span class="pink" style="font-family: Tiki Tropic;"
-      >!</span
-    >
+    >に<span class="pink">祝</span><span class="orange">福</span>を<span class="pink">!</span>
   </p>
 </div>
 
@@ -19,34 +26,60 @@
 
   h1 {
     font-family: "Tiki Tropic";
-    color: #ef8400;
-    font-size: 80px;
+    color: #fffbeb;
+    font-size: 70px;
     text-align: center;
+    line-height: 1.1;
   }
 
   p {
     font-family: "Noto Sans JP";
-    color: #ffccbd;
-    font-size: 48px;
+    color: #fffbeb;
+    font-size: 38px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+
+  .smol {
+    position: absolute;
+    font-size: 35px;
+    line-height: 0.9;
+    margin-top: 15px;
+    margin-left: -55px;
+  }
+
+  .godsblessing {
+    margin-right: 65px;
   }
 
   .pink {
-    color: #e8006d;
+    color: #ec4899;
   }
 
   .orange {
-    color: #ef8400;
+    color: #f97316;
   }
 
   @media screen and (max-width: 600px) {
     h1 {
-      font-size: 30px;
+      font-size: 40px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
+      margin-top: 5px;
+    }
+
+    .smol {
+      position: absolute;
+      font-size: 20px;
+      line-height: 0.9;
+      margin-top: 6px;
+      margin-left: -40px;
+    }
+
+    .godsblessing {
+      margin-right: 45px;
     }
   }
 
@@ -58,27 +91,5 @@
     width: 100vw;
     height: 100vh;
     cursor: pointer;
-  }
-
-  .blink {
-    animation: blinking 1.2s infinite;
-  }
-
-  @keyframes blinking {
-    0% {
-      color: #e8006d;
-    }
-    49% {
-      color: #e8006d;
-    }
-    60% {
-      color: #ef8400;
-    }
-    99% {
-      color: #ef8400;
-    }
-    100% {
-      color: #e8006d;
-    }
   }
 </style>

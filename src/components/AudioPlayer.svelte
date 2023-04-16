@@ -43,7 +43,7 @@
     appearance: none;
     height: 8px;
     border-radius: 8px;
-    background: var(--megumin-crimson);
+    background: #ef4444;
     cursor: pointer;
     transition: background 0.15s ease-in-out;
   }
