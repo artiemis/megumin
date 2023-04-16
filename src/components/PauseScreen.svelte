@@ -40,9 +40,9 @@
   p {
     font-family: "Noto Sans JP";
     color: #fffbeb;
-    font-size: 38px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 14px;
     transition: scale 0.3s;
   }
 
@@ -76,20 +76,20 @@
     }
 
     p {
-      font-size: 20px;
-      margin-top: 5px;
+      font-size: 17px;
+      margin-top: 9px;
     }
 
     .smol {
       position: absolute;
       font-size: 20px;
       line-height: 0.9;
-      margin-top: 6px;
-      margin-left: -40px;
+      margin-top: 8px;
+      margin-left: -35px;
     }
 
     .godsblessing {
-      margin-right: 45px;
+      margin-right: 40px;
     }
   }
 
