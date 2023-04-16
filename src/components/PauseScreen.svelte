@@ -30,6 +30,11 @@
     font-size: 70px;
     text-align: center;
     line-height: 1.1;
+    transition: scale 0.3s;
+  }
+
+  h1:hover {
+    scale: 110%;
   }
 
   p {
@@ -38,6 +43,11 @@
     font-size: 38px;
     text-align: center;
     margin-top: 10px;
+    transition: scale 0.3s;
+  }
+
+  p:hover {
+    scale: 110%;
   }
 
   .smol {
