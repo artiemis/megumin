@@ -1,5 +1,5 @@
 <div class="pause" on:click on:keydown>
-  <h1 class="blink">God's Blessing on this<br />Wonderful Page!</h1>
+  <h1 class="blink">God's Blessing on this<br />Wonderful Site!</h1>
   <p>
     この<span class="pink">素</span><span class="orange">晴</span>らしい<span class="pink">サイ</span><span
       class="orange">ト</span
