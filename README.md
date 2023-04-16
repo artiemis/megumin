@@ -1,1 +1,1 @@
-![Site showcase](https://cdn.discordapp.com/attachments/789168201295724577/1071210704260042772/a.png)
+![Site showcase](https://cdn.discordapp.com/attachments/789168201295724577/1097176954790224002/k.png)
