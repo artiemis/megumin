@@ -1,4 +1,4 @@
-import { randomStyle } from "./funcs";
+import { randomStyle } from "./utils";
 
 export type DanbooruImage = {
   id: string;

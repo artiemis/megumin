@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onDestroy, onMount } from "svelte";
-  import { fetchMeguminImages, type DanbooruImage } from "../utils/api";
+  import { fetchMeguminImages, type DanbooruImage } from "../lib/api";
   import Loader from "./Loader.svelte";
 
   let images: DanbooruImage[];
-  let scrollInterval: NodeJS.Timer;
+  let scrollInterval: number;
   let refreshing = false;
 
   const autoScroll = () => {

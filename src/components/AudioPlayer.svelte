@@ -1,21 +1,34 @@
 <script lang="ts">
   import { onDestroy, onMount } from "svelte";
+  import { songs } from "../lib/utils";
 
-  export let src: string;
+  let audioIndex = 0;
+  let volume = 20;
 
-  let volume = 10;
-
-  let audio = new Audio(src);
-  audio.loop = true;
-
+  let audio = new Audio(songs[audioIndex]);
   $: audio.volume = volume / 100;
+
+  function playNext() {
+    audioIndex++;
+    if (audioIndex >= songs.length) {
+      audioIndex = 0;
+    }
+    if (audioIndex === 2 && volume >= 20) {
+      volume -= 10;
+    }
+
+    audio.src = songs[audioIndex];
+    audio.play()
+  }
 
   onMount(() => {
     audio.play();
+    audio.addEventListener("ended", playNext);
   });
 
   onDestroy(() => {
     audio.pause();
+    audio.removeEventListener("ended", playNext);
   });
 </script>
 
