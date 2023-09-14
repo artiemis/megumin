@@ -1,4 +1,4 @@
-<div class="pause" on:click on:keydown>
+<div class="pause" on:click on:keydown role="button" tabindex="0">
   <h1>
     <span class="godsblessing">
       <span class="pink">God's </span>
@@ -10,9 +10,11 @@
     Site<span class="orange">!</span>
   </h1>
   <p>
-    この<span class="pink">素</span><span class="orange">晴</span>らしい<span class="pink">サイ</span><span
-      class="orange">ト</span
-    >に<span class="pink">祝</span><span class="orange">福</span>を<span class="pink">!</span>
+    この<span class="pink">素</span><span class="orange">晴</span>らしい<span
+      class="pink">サイ</span
+    ><span class="orange">ト</span>に<span class="pink">祝</span><span
+      class="orange">福</span
+    >を<span class="pink">!</span>
   </p>
 </div>
 
